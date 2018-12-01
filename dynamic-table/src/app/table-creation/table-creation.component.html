@@ -1,0 +1,18 @@
+<div class="dis-flex">
+	<div class="inputDiv" *ngIf="searchFeature" >
+		<span>Search</span> <input type="text" [(ngModel)]="searchText" placeholder="Search Text">
+  </div>
+<table>
+  <tr>
+    <th *ngFor="let key of headers; index as i" (click)="sorting(keys[i], key)" 
+    style="cursor: pointer;width: 100px">
+       {{key}} 
+       <span *ngIf='order == -1 && keys[i] == sortingKey'>&#8593;</span>
+       <span *ngIf='order == 1  && keys[i] == sortingKey'>&darr;</span>
+    </th>
+  </tr>
+  <tr *ngFor='let x1 of x  | search : searchText | sorting : sortingKey: order'>
+      <td *ngFor="let i of arrayLength"> {{x1[keys[i]]}} </td>
+  </tr>
+</table>
+</div>

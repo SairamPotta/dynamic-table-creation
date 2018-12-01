@@ -1,0 +1,39 @@
+table,td,th,tr {
+  border: 1px solid;
+  padding: 5px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: gray;
+}
+tr {
+  height: 40px;
+}
+
+.dis-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.dis-flex * {
+  margin: 5px;
+}
+
+.inputDiv input{
+  width: 60%;
+  border-radius: 5px;
+  height: 25px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.inputDiv span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: green;
+}
