@@ -24,8 +24,7 @@ Download the dynamic table creation component and use it in your project.
 
 
 ####  Use this below syntax to send data to accordion component
-<app-table-creation [jsonData]='data' [headers]='headers' [search]="true" [sorting]="true">
-</app-table-creation>
+    <app-table-creation [jsonData]='data' [headers]='header' [search]="true" [sorting]="true"> </app-table-creation>
 
 ### Input Decorator Info
 - <b>headers</b> is the Input type for TableCreation component of table headers.
@@ -42,5 +41,19 @@ Download the dynamic table creation component and use it in your project.
 ### search and sorting
   search and sorting are the boolean data only. If sorting requires then use the input decorator as sorting="true", similar to searching also.
 
-
-  
+## Example JSON data
+<pre>
+<b>headers = ["Names", "Location", "Pincode"];</b>
+<b>data= [
+    {
+      'name':'A',
+      'location': 'MTM',
+      "pincode": 510210
+    },
+    {
+      'name':'B',
+      'location': 'MAS',
+      "pincode": 501201
+    }];
+ </b>
+</pre>
