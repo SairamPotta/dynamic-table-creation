@@ -1,7 +1,7 @@
 # Dynamic-Table-Creation
 
 Dynamic Table Creation component can create a table using JSON data given by the user.
-We can use the table creation component this is a reusuable component.
+We can use the table creation component, this is a reusuable component.
 
 ## Output Format
 
@@ -28,17 +28,19 @@ Download the dynamic table creation component and use it in your project.
 </app-table-creation>
 
 ### Input Decorator Info
-- <b>headers</b> is the Input type for TableCreation component of headers.
-- <b>jsonData</b> is the Input type for TableCreation component of rows.
+- <b>headers</b> is the Input type for TableCreation component of table headers.
+- <b>jsonData</b> is the Input type for TableCreation component of table rows.
 - <b>search</b> is the Input type for TableCreation component used for Filtering the data.
 - <b>sorting</b> is the Input Type for TableCreation component used for Sorting the data.
 
    
-### Json location
+### JSON location
 
 #### headers and jsonData
   header and jsonData can take from either external link(assets) then use http request to get Json data or directlyn use json format into component.ts by creating json format variable file  .
 
-#### search and sorting
+### search and sorting
   search and sorting are the boolean data only. If sorting requires then use the input decorator as sorting="true", similar to searching also.
+
+
   
