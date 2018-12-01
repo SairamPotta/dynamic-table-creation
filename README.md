@@ -8,6 +8,10 @@ We can use the table creation component, this is a reusuable component.
  <p align='center'><img src="https://github.com/SairamPotta/dynamic-table-creation/blob/master/Images/dynamic%20table.png"></p>
  
 
+ To preview demo of Dynamic Table Creation project, [Click here](https://angular-aqccfs.stackblitz.io/)
+ 
+ 
+
 ## Getting Started
 Download the Dynamic Table creation component and install the required packages and run the application.
 
